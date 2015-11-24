@@ -9,6 +9,7 @@ Test for javascript skills
 The goal of this test is to evaluate your JS skills. Open index.js and refactor the whole code to your most beautiful way.
 
 Thing to include in your refactor:
+
 1. Avoid duplications
 2. Use coherent names
 3. Make the whole thing faster by optimizing functions
