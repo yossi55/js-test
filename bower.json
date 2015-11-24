@@ -1,0 +1,17 @@
+{
+  "name": "pf-mortgage",
+  "version": "1.0",
+  "dependencies" : {
+    "jquery" : "2.1.1",
+    "jquery-ui" : "",
+    "bootstrap" : "",
+    "prefixfree" : "",
+    "respond" : "",
+    "html5shiv" : "",
+    "bootstrapvalidator": "",
+    "bootstrap-slider": "",
+    "slick-carousel": "",
+    "readmore.js": "",
+    "jquery-price-format": ""
+  }
+}

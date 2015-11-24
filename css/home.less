@@ -1,0 +1,140 @@
+/* ----- Home page ----- */
+/* -----    Map    ----- */
+.map { width: 100%; height: 400px; float: left; padding: 0; margin: 0 0 30px 0;
+	@media (max-width: @screen-xs-max) {
+		height: auto; padding: 0 0 250px 0; margin: 0;
+	}
+	#map-canvas { width: 100%; height: 400px; float: left; position: absolute; left: 0; right: 0;  border-bottom: 3px solid @theme-color-1; background-color: @brand-primary;
+		@media (max-width: @screen-xs-max) {
+			height: 250px; border-top: 3px solid @theme-color-1; z-index: 100; margin: 355px 0 0 0;
+		}
+	}
+	.panel-search { position: relative; top: 20px; background: rgba(255, 255, 255, 0.9); width: 290px; margin-top: inherit;
+		@media (max-width: @screen-xs-max) {
+			position: relative; top: 0; width: 110%; height:380px; float: left; background: #f9f9f9; box-shadow:none; margin: 0 -5%;    	padding:15px 5% 0 5%;
+		}
+		.panel-heading { padding-bottom: 0; margin-bottom: 10px; margin-top: inherit; padding-left: 15px;
+			@media (max-width: @screen-xs-max) {
+				padding: 0;
+			}
+			> h1 {font-weight: 200; font-size: 85%; color: @gray; margin: 0}
+		}
+		.panel-body { padding-top: 0;
+			@media (max-width: @screen-xs-max) {
+				padding: 0 0 10px 0;
+			}
+		}
+		.btn-group { width: 100%; margin-bottom: 20px;
+			@media (max-width: @screen-xs-max) {
+				width: 100%;
+			}
+			> label { width: 29.33%; padding: 5px 0;
+				@media (max-width: @screen-xs-max) {
+					width: 30.33%; padding: 5px 0;
+				}
+			}
+			> label#property_apartment { width:41.33%;
+				@media (max-width: @screen-xs-max) {
+					width: 39.33%;
+				}
+			}
+		}
+		.drop-list1 { height: 35px;
+			select { height: 35px; font-size: 14px; color: @white; background: @theme-color-1; border: 1px solid #af0424; border-radius: @border-radius-base; box-shadow: none;
+				option { color: #526f80; background: @white; border: 1px solid #c0c0c0; }
+				a { padding: 5px 0; }
+				a:hover { background: #f5f5f5; }
+			}
+			select:focus { background: #96041f; }
+			.btn { -webkit-appearance:none; -moz-appearance:none; appearance:none; outline:0; }
+		}
+		label.control-label { font-size: 120%; margin-bottom: 5px; padding-top: 10px; color: @gray-light; font-weight: 300; }
+		.panel-footer { font-size: 160%; font-weight: 200; color: @brand-primary; background: transparent; position: relative; padding-top: 15px; padding-bottom: 15px;
+			@media (max-width: @screen-xs-max) {
+				line-height:40px; padding:8px 0;
+			}
+		}
+		.number-of-projects { font-weight: 600; border-left: 1px rgb(221, 221, 221) solid; padding-left: 10px; margin-left: 10px; font-size: 130%; display: inline-block; text-align: center; min-width: 50px; position: absolute; top:10px; right:15px;
+			@media (max-width: @screen-xs-max) {
+			    font-size: 120%;
+			}
+		}
+	}
+}
+
+
+/* Featured project bloc */
+.featured-project { background-position: center; margin-top: 15px; margin-bottom: 30px; background-size: cover; background-repeat: no-repeat;
+    @media (max-width: @screen-xs-max) {
+      background-position: center; margin-top: 15px; margin-bottom: 30px; background-size: cover; background-repeat: no-repeat;
+    }
+	&.no-pic { background-image: url(../images/no-pic.png); background-repeat: repeat; background-position: inherit; background-size: auto }
+	&.panel {margin-top: inherit;
+		.panel-heading { background: rgba(255, 255, 255, 0.75); position: relative; height: 50px; overflow: hidden; margin: 0; padding: 0 15px;
+			.featured-tag { position: absolute; top: 0; right: 0; height: 66px; width: 66px; background-size: cover }
+			.title { margin: 0; padding: 0; font-variant: small-caps;
+				.bullet { width: 15px; height: 15px; background: @brand-primary; position: relative; display: inline-block; .pull-left; margin: 18px 0 0 0;}
+				h2 { font-weight: 200; width: 101%; height: 51px; float: left; text-transform: inherit; font-variant: initial; display: table; position: absolute; top: 0; left: 0; padding: 0 15px; margin: 0; overflow: hidden; font-size: 125%; -webkit-font-size-adjust: auto;-moz-webkit-font-size-adjust: auto;-ms-webkit-font-size-adjust: auto;-o-webkit-font-size-adjust: auto;webkit-font-size-adjust: auto;
+
+					span { width: 100%; height: 100%; display: table-cell; vertical-align: middle; padding: 2px 0 0 25px;}
+				}
+			}
+		}
+		.link-area {display: inline-block; position: relative; width: 100%; height: 100%;}
+	}
+	.panel-body { height: 285px; position: relative;
+		.developer-logo { position: absolute; top: 15px; right: 15px; max-width: 200px; max-height: 120px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+		.more-details { position: absolute; bottom: 20px; right: 20px; border: 1px solid rgba(255, 255, 255, 0.5) }
+	}
+	.panel-footer { width: 100%; background: rgba(255, 255, 255, 0.85); height: 38px; display: table; vertical-align: middle; overflow: hidden; position: relative; padding: 0; margin: 0;
+		&.details { width: 100%; height: 38px; display: table; vertical-align: middle; font-size: 85%; -webkit-font-size-adjust: auto;-moz-font-size-adjust: auto;-ms-font-size-adjust: auto;-o-font-size-adjust: auto;webkit-font-size-adjust: auto; padding: 0; margin: 0;
+			.price-range, .availability, .number-of-units { font-weight: bold}
+
+		}
+	}
+	.panel-footer.details .pull-right { width: auto; height: 100%; display: inline-block; font-weight: bold; position: absolute; top: 13px; right: 15px; margin: 0; padding: 0;}
+	.panel-footer.details .pull-left { width: auto; height: 100%; display: inline-block; font-weight: bold; position: absolute; top: 13px; left: 15px; margin: 0; padding: 0;}
+	.panel-footer-inner { width: 100%; height: 100%; line-height: 1.3em; display: table-cell; vertical-align: middle; padding: 1px 55px 0 15px;}
+
+  &.no-pic { background-image: url(../images/no-pic.png); background-repeat: repeat; background-position: inherit; background-size: auto }
+  &.panel {margin-top: inherit;
+	.panel-heading { background: rgba(255, 255, 255, 0.75); position: relative; height: 50px; overflow: hidden; margin: 0; padding: 0 15px;
+	  .featured-tag { position: absolute; top: 0; right: 0; height: 66px; width: 66px; background-size: cover }
+	  .title { margin: 0; padding: 0; font-variant: small-caps;
+		.bullet { width: 15px; height: 15px; background: @brand-primary; position: relative; display: inline-block; .pull-left; margin: 18px 0 0 0;}
+        h2 { width: 101%; height: 51px; float: left; color: @gray; text-transform: inherit; font-variant: initial; display: table; position: absolute; top: 0; left: 0; padding: 0 15px; margin: 0; overflow: hidden; font-size: 125%; -webkit-font-size-adjust: auto;-moz-webkit-font-size-adjust: auto;-ms-webkit-font-size-adjust: auto;-o-webkit-font-size-adjust: auto;webkit-font-size-adjust: auto;
+            @media (max-width: @screen-xs-max) {
+              font-size: 100%;
+            }
+            span { width: 100%; height: 100%; display: table-cell; vertical-align: middle; padding: 2px 0 0 25px;}
+        }
+	  }
+	}
+	.link-area {display: inline-block; position: relative; width: 100%; height: 100%;}
+  }
+  .panel-body { height: 285px; position: relative;
+    .developer-logo { position: absolute; top: 15px; right: 15px; max-width: 200px; max-height: 120px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+    .more-details { position: absolute; bottom: 20px; right: 20px; border: 1px solid rgba(255, 255, 255, 0.5) }
+  }
+  .panel-footer { width: 100%; background: rgba(255, 255, 255, 0.85); height: 38px; display: table; vertical-align: middle; overflow: hidden; position: relative; padding: 0; margin: 0;
+    &.details { width: 100%; height: 38px; display: table; vertical-align: middle; font-size: 85%; -webkit-font-size-adjust: auto;-moz-font-size-adjust: auto;-ms-font-size-adjust: auto;-o-font-size-adjust: auto;webkit-font-size-adjust: auto; padding: 0; margin: 0;
+      .price-range, .availability, .number-of-units { font-weight: bold}
+
+    }
+  }
+  .panel-footer.details .pull-right { width: auto; height: 100%; display: inline-block; font-weight: bold; position: absolute; top: 13px; right: 15px; margin: 0; padding: 0;}
+  .panel-footer.details .pull-left { width: auto; height: 100%; display: inline-block; font-weight: bold; position: absolute; top: 13px; left: 15px; margin: 0; padding: 0;}
+  .panel-footer-inner { width: 100%; height: 100%; line-height: 1.3em; display: table-cell; vertical-align: middle; padding: 1px 45px 0 15px;}
+
+}
+
+
+/* ---- Are you a developer ? ----- */
+.are-you-developer {
+	background-image: url(../images/developer-structures.png); background-size: contain; background-repeat: no-repeat; background-position: bottom left;
+}
+.btn-apply-now { .center-block(); width: 300px; margin-top: 25px; }
+
+/* ------------------------------ */
+/* ------- END OF Home page ----- */
+/* ------------------------------ */
