@@ -13,6 +13,7 @@ Thing to include in your refactor:
 1. Avoid duplications
 2. Use coherent names
 3. Make the whole thing faster by optimizing functions
+4. Think OBJECT ORIENTED
 
 When done, do not commit on another repo/fork. Zip your file and send it back to us.
 
