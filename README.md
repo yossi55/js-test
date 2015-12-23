@@ -6,7 +6,7 @@ Test for javascript skills
 3. run your environment in local
 
 ##Tasks
-The goal of this test is to evaluate your JS skills. Open index.js and refactor the whole code to your most beautiful way.
+The goal of this test is to evaluate your JS skills. Open `index.js` and refactor the whole code to your most beautiful way.
 
 Thing to include in your refactor:
 
