@@ -19,4 +19,6 @@ Please clearly comment your code as we can understand what you are trying to do 
 
 When done, do not commit on another repo/fork. Zip your file and send it back to us.
 
+You should be able to finish the test after 1 hour. If you are really good, it will take you 15 minutes.
+
 Good luck
