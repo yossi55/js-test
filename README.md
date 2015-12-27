@@ -17,7 +17,7 @@ Thing to include in your refactor:
 
 Please clearly comment your code as we can understand what you are trying to do at each step of the script.
 
-When done, do not commit on another repo/fork. Zip your file and send it back to us.
+When done, do not commit on another repo/fork. Zip your files, including the whole project, and send it back to us.
 
 You should be able to finish the test after 1 hour. If you are really good, it will take you 15 minutes.
 
