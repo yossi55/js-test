@@ -15,9 +15,11 @@ Thing to include in your refactor:
 3. Make the whole thing faster by optimizing functions
 4. Think OBJECT ORIENTED
 
-Please clearly comment your code as we can understand what you are trying to do at each step of the script.
-
-When done, do not commit on another repo/fork. ZIP your files, including the whole project, and send it back to us.
+##Important notes
+- Start the file with your name in the comments
+- Clearly comment your code as we can understand what you are trying to do at each step of the script
+- When done, do not commit on another repo/fork
+- ZIP the whole folder and send it back to us - add your name is the ZIP filename
 
 You should be able to finish the test after 1 hour. If you are really good, it will take you 15 minutes.
 
